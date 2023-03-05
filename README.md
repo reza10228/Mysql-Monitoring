@@ -21,7 +21,7 @@ Install with docker
           - job_name: 'mysql_exporter'
             static_configs:
               - targets:
-                - "192.168.132.18:9104"
+                - "192.168.x.x:9104"
 5. Creating Dashboards
 
         https://grafana.com/grafana/dashboards/7362
