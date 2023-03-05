@@ -1,0 +1,8 @@
+version: '2'
+services:
+  mysqld-exporter:
+    image: prom/mysqld-exporter:latest
+    ports:
+      - 9104:9104
+    environment:
+      - DATA_SOURCE_NAME=mysqld_exporter:StrongPassword@(<mysql-database-ip>:<mysql-database-port>)/
